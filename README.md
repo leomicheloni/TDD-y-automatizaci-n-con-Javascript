@@ -31,9 +31,11 @@ function test(){
 
 Por supuesto que esto es un ejemplo, pero la idea básica es tener una porción de código que prueba nuestro código, como imaginarán para esto exiten muchos frameworks:
 
-1 - QUnit
-2 - Jasmine
-3 - JUnit
+<ul>
+<li>QUnit</li>
+<li>Jasmine</li>
+<li>JUnit</li>
+</ul>
 
 Y tantos más, en este caso vamos a utilizar un poco de QUnit.
 
