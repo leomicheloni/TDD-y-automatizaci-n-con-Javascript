@@ -90,4 +90,23 @@ function resta(a, b){
 [Ejemplo 3](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/examples/example_3.js)
 
 Y listo. De este modo vamos avanzando sobre pasos seguros y el finalizar tenemos el código listo y probado.
+En muchos casos vamos a escribir varias pruebas antes de comenzar a codificar lo que queremos probar.
+
+###Ventajas de TDD
+Algunas ventajas de TDD son que al terminar tenemos un conjunto de test para probar nuestro código y por otro lado muchas veces nos permite ir "descubriendo" nuestro sistema, esto es, a medida que pensamos las pruebas vamos descubriendo nuevos casos y repensando definiciones.
+
+###Cómo automatizar Qunit?
+Una de las dificultades para automatizar las pruebas hechas con QUnit es el hecho de que necesitamos un navegador web, pero esto no es un problema ya que podemos utilizar PhantomJs que es un navegador sin interfaz, y podemos invocarlos por línea de comandos.
+
+##PhantomJs
+Es lo que se conoce como "headless browser", un navegador sin interfaz gráfica, tiene muchas utilidades en nuestro caso vamos a correr las pruebas de QUnit y ver el resultado por consola.
+
+Para utilizar Phantom tenemos que interactuar con su API, entonces si queremos correr los test de Qunit tenemos que escribir un script (en Javasript por supuesto) para decirle que lo haga y luego nos muestre el resultado, por suerte hay algunos ya hechos que podemos utilizar.
+
+TODO: mejorar
+
+##Automatizar las pruebas
+En este caso con un lindo script hecho con PowerShell logramos que las pruebas de QUnit se ejecuten sobre PhantomJs cada vez que guardamos un archivo.
+
+TODO: ejemplo
 
