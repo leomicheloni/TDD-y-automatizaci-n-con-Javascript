@@ -28,7 +28,7 @@ function test() {
 test();
 ```
 
-[Ejemplo 1](http://algo.com)
+[Ejemplo 1](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/examples/example_1.js)
 
 Por supuesto que esto es un ejemplo, pero la idea básica es tener una porción de código que prueba nuestro código, como imaginarán para esto exiten muchos frameworks:
 
@@ -58,7 +58,7 @@ test("suma correcta", function(){
 ```
 de este modo verificamos que el resultado sea 7, sino el test fallará.
 
-[Ejemplo 2](http://algo.com)
+[Ejemplo 2](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/examples/example_2.js)
 
 ##TDD, desarrollo orientado por pruebas
 
@@ -86,6 +86,8 @@ function resta(a, b){
 	return a-b;
 }
 ```
+
+[Ejemplo 3](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/examples/example_3.js)
 
 Y listo. De este modo vamos avanzando sobre pasos seguros y el finalizar tenemos el código listo y probado.
 
