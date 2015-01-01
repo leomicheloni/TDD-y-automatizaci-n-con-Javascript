@@ -62,3 +62,30 @@ de este modo verificamos que el resultado sea 7, sino el test fallará.
 
 ##TDD, desarrollo orientado por pruebas
 
+El desarrollo orientado por pruebas (TDD) es comenzar nuestro código a partir de la prueba que verifica el comportamiento que vamos a implementar luego, por ejemplo:
+
+```javascript
+test("resta correcta", function(){
+	var resultado = resta(8,5);
+	equal(resultado, 3, "La resta es incorrecta");
+});
+```
+
+En este caso escribimos el test para verificar la resta pero aún no hemos escrito nada de código, ni siquiera el método, el siguiete paso sería:
+
+```javascript
+function resta(a, b){
+
+}
+```
+
+Y corremos el test una vez más, por supuesto fallará, la idea es ir avanzando de a poco o "baby steps", en este caso el siguiente paso podría ser:
+
+```javascript
+function resta(a, b){
+	return a-b;
+}
+```
+
+Y listo. De este modo vamos avanzando sobre pasos seguros y el finalizar tenemos el código listo y probado.
+
