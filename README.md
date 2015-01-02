@@ -33,7 +33,7 @@ test();
 Por supuesto que esto es un ejemplo, pero la idea básica es tener una porción de código que prueba nuestro código, como imaginarán para esto exiten muchos frameworks:
 
 <ul>
-<li>QUnit</li>
+<li>[QUnit](http://qunitjs.com/)</li>
 <li>Jasmine</li>
 <li>JUnit</li>
 </ul>
