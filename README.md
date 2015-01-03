@@ -92,6 +92,8 @@ function resta(a, b){
 Y listo. De este modo vamos avanzando sobre pasos seguros y el finalizar tenemos el código listo y probado.
 En muchos casos vamos a escribir varias pruebas antes de comenzar a codificar lo que queremos probar.
 
+![unit result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/qunit.png)
+
 ###Ventajas de TDD
 Algunas ventajas de TDD son:
  - Al terminar tenemos un conjunto de test para probar nuestro código y podemos correrlos durante todo el proceso de desarrollo.
