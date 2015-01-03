@@ -110,8 +110,13 @@ Para utilizar PhantomJs tenemos que interactuar con su API, entonces si queremos
 Con un sencillo comando le decimos a PhantomJs que cargue el runner y le pasamos el nombre de nuestra página de pruebas como parámetro:
 
 ```bat
-
+phantomjs.exe run-qunit.js examples\exampleloader.html
 ```
+
+y vemos el resultado en la consola, genial
+
+![phantom result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/phatomresult.png)
+
 
 ##Automatizar las pruebas
 En este caso con un lindo script hecho con PowerShell logramos que las pruebas de QUnit se ejecuten sobre PhantomJs cada vez que guardamos un archivo.
