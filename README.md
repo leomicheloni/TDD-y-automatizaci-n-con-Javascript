@@ -105,9 +105,10 @@ Una de las dificultades para automatizar las pruebas hechas con QUnit es el hech
 ##PhantomJs
 Es lo que se conoce como "headless browser": un navegador sin interfaz gráfica, tiene muchas utilidades en nuestro caso vamos a correr las pruebas de QUnit y ver el resultado por consola.
 
-Para utilizar PhantomJs tenemos que interactuar con su API, entonces si queremos correr los test de QUnit tenemos que escribir un script (en Javasript por supuesto) para decirle que lo carge nuestra página de prueba y luego nos muestre el resultado, por suerte hay algunos ya hechos que podemos utilizar, en nuestro caso vamos a [utilizar éste](https://github.com/jonkemp/qunit-phantomjs-runner).
+Para utilizar PhantomJs tenemos que interactuar con su API, entonces si queremos correr los test de QUnit tenemos que escribir un script (en Javasript por supuesto, se conocen como runners) para decirle que lo carge nuestra página de prueba y luego nos muestre el resultado, por suerte hay algunos ya hechos que podemos utilizar, en nuestro caso vamos a [utilizar éste](https://github.com/jonkemp/qunit-phantomjs-runner).
 
-TODO: mejorar
+Con un sencillo comando le decimos a PhantomJs que cargue el runner y le pasamos el nombre de nuestra página de pruebas como parámetro:
+
 
 ##Automatizar las pruebas
 En este caso con un lindo script hecho con PowerShell logramos que las pruebas de QUnit se ejecuten sobre PhantomJs cada vez que guardamos un archivo.
