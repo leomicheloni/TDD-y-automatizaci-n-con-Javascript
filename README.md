@@ -34,11 +34,11 @@ Por supuesto que esto es un ejemplo, pero la idea básica es tener una porción 
 
 <ul>
 <li>[QUnit](http://qunitjs.com/)</li>
-<li>Jasmine</li>
-<li>JUnit</li>
+<li>[Jasmine](http://jasmine.github.io/)</li>
+<li>[JUnit](http://junit.org/)</li>
 </ul>
 
-Y tantos más, en este caso vamos a utilizar un poco de QUnit.
+Y tantos más, en este caso vamos a utilizar QUnit.
 
 ##Introducción a QUnit
 Básicamente tenemos una función con la cual declaramos un test
@@ -56,7 +56,7 @@ test("suma correcta", function(){
     equal(resultado, 7, "El resultado no es el esperado");
 });
 ```
-de este modo verificamos que el resultado sea 7, sino el test fallará.
+de este modo verificamos que el resultado sea 7, sino el test fallará. Por supuesto existen más [aserciones](http://api.qunitjs.com/category/assert/).
 
 [Ejemplo 2](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/examples/example_2.js)
 
@@ -93,15 +93,17 @@ Y listo. De este modo vamos avanzando sobre pasos seguros y el finalizar tenemos
 En muchos casos vamos a escribir varias pruebas antes de comenzar a codificar lo que queremos probar.
 
 ###Ventajas de TDD
-Algunas ventajas de TDD son que al terminar tenemos un conjunto de test para probar nuestro código y por otro lado muchas veces nos permite ir "descubriendo" nuestro sistema, esto es, a medida que pensamos las pruebas vamos descubriendo nuevos casos y repensando definiciones.
+Algunas ventajas de TDD son:
+ - Al terminar tenemos un conjunto de test para probar nuestro código y podemos correrlos durante todo el proceso de desarrollo.
+ - Nos permite ir "descubriendo" nuestro sistema, es decir, a medida que pensamos las pruebas vamos descubriendo nuevos casos y repensando definiciones.
 
-###Cómo automatizar Qunit?
-Una de las dificultades para automatizar las pruebas hechas con QUnit es el hecho de que necesitamos un navegador web, pero esto no es un problema ya que podemos utilizar PhantomJs que es un navegador sin interfaz, y podemos invocarlos por línea de comandos.
+###Cómo automatizar QUnit?
+Una de las dificultades para automatizar las pruebas hechas con QUnit es el hecho de que necesitamos un navegador web, pero esto no es necesariamente un problema ya que podemos utilizar [PhantomJs](http://phantomjs.org/) que es un navegador sin interfaz, y podemos invocarlos por línea de comandos.
 
 ##PhantomJs
-Es lo que se conoce como "headless browser", un navegador sin interfaz gráfica, tiene muchas utilidades en nuestro caso vamos a correr las pruebas de QUnit y ver el resultado por consola.
+Es lo que se conoce como "headless browser": un navegador sin interfaz gráfica, tiene muchas utilidades en nuestro caso vamos a correr las pruebas de QUnit y ver el resultado por consola.
 
-Para utilizar Phantom tenemos que interactuar con su API, entonces si queremos correr los test de Qunit tenemos que escribir un script (en Javasript por supuesto) para decirle que lo haga y luego nos muestre el resultado, por suerte hay algunos ya hechos que podemos utilizar.
+Para utilizar PhantomJs tenemos que interactuar con su API, entonces si queremos correr los test de QUnit tenemos que escribir un script (en Javasript por supuesto) para decirle que lo carge nuestra página de prueba y luego nos muestre el resultado, por suerte hay algunos ya hechos que podemos utilizar, en nuestro caso vamos a [utilizar éste](https://github.com/jonkemp/qunit-phantomjs-runner).
 
 TODO: mejorar
 
