@@ -118,8 +118,13 @@ y vemos el resultado en la consola, genial
 ![phantom result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/phatomresult.png)
 
 
-##Automatizar las pruebas
+##Automatizar las pruebas, testing continuo
 En este caso con un lindo script hecho con PowerShell logramos que las pruebas de QUnit se ejecuten sobre PhantomJs cada vez que guardamos un archivo.
 
-TODO: ejemplo
+Para hacerlo podemos escribir un script que mire los cambios y ejecute el mismo comando de PhantomJs, en este caso voy a utilizar un script que hizo [mi buen amigo José](http://joseoncode.com/2011/08/08/javascript-continuous-testing-with-qunit-phantomjs-and-powershell/).
+
+![phantom result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/powershell.png)
+
+
+
 
