@@ -125,6 +125,6 @@ Para hacerlo podemos escribir un script que mire los cambios y ejecute el mismo 
 
 ![phantom result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/powershell.png)
 
-
+Como vemos con cada cambio en algún archivo dentro de nuestro código se ejecuta el comando que hace que PhantomJs corra los test de QUnit, por lo tanto estamos haciendo testing continuo.
 
 
