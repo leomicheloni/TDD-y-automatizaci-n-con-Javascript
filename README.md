@@ -130,4 +130,4 @@ Para hacerlo podemos escribir un script que mire los cambios y ejecute el mismo 
 
 Como vemos con cada cambio en algún archivo dentro de nuestro código se ejecuta el comando que hace que PhantomJs corra los test de QUnit, por lo tanto estamos haciendo testing continuo.
 
-
+**La combinación de TDD y testing continuo es muy interesante, ya que definimos los casos de prueba y a medida que desarrollamos el código vamos viendo como se van superando las pruebas**
