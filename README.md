@@ -185,4 +185,4 @@ Una vez hecho vemos que funciona perfectamente
 
 ![grunt result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/grunt.png)
 
-#Karma, unit testing runner
+
