@@ -185,4 +185,33 @@ Una vez hecho vemos que funciona perfectamente
 
 ![grunt result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/grunt.png)
 
+#Karma
 
+[Karma](http://karma-runner.github.io/0.12/index.html) es un test runner pero con una diferencia interesante: corre los tests directo desde el javascript, sin necesidad de un html y además sobre un navegador real, es decir, puedo decirle a Karma que corra mis test cada vez sobre Internet Explorer y Chrome sin mucho más que una configuración.
+
+Una vez que descargamos Karma es mejor instalar [Karma-cli](https://www.npmjs.com/package/karma-cli) y de este modo podemos invocar Karma desde la línea de comandos y entre otras cosas configurarlo utilizando el siguiente comando:
+
+```javascript
+karma init
+```
+
+A partir de eso veremos que Karma nos hace preguntas sobre la configuración
+<ul>
+	<li>Framwork de testing (QUnit, Jassminet, Mocha, etc)</li>
+	<li>Si utilizamos RequireJs</li>
+	<li>Navegador sobre el que queremos correr los test (puede ser más de uno)</li>
+	<li>Paths donde reside nuestro código fuente y tests</li>
+	<li>Y si queremos que Karma corre de manera automática cuando algún archivo cambie (testing continuo)</li>
+</ul>
+
+![karma config](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/karmaconfig.png)
+
+Con esto hecho no tenemos más que iniciar Karma para que comienze el testing continuo
+
+```javascript
+karma start
+```
+
+![karma config](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/karmaconfig.png)
+
+Muy bien, sencillo y poderoso, no nos queda más que elegir el enfoque que más nos gusta y comenzar con el testing continuo.
