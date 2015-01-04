@@ -3,16 +3,17 @@ TDD y automatización con Javascript
 
 #Introducción:
 
- En procesos ágiles de desarrollo, iterativos y de ciclos cortos es muy valiso el feedback de los usuarios. Para esto necesitamos poder poner a disposición de los mismos versiones de la aplicación lo más rápido posible.
+ En procesos ágiles de desarrollo iterativos y de ciclos cortos es muy valiso el feedback de los usuarios. Para esto necesitamos poder poner a disposición de los mismos versiones de la aplicación lo más rápido posible.
  Las pruebas unitarias (unit testing) nos permiten desarrollar piezas del sistema sin necesitar otras dependecias y además asegurar la calidad del código a medida que el sistema crece.
  Automatizar la ejecución de las pruebas unitarias nos permite detectar problemas de integración, por otro lado la automatización del proceso de despliegue nos ahorra el tiempo de hacerlo nosotros y evita errores humanos.
+ Con estas herramientas podemos asegurar que el cliente tendrás una versión del producto rápidamente disponible y con un nivel de prueba.
  En este artículo vamos a hacer una introducción a conceptos de unit testing, integración continua, despligue automatizado y entrega continua.
  Para ello utilizaremos Nodejs, gruntjs, Qunit, Phantomjs y Karma.
- La idea es una introcción general a los conceptos y herramienteas sin profundizar en particular.
+ La idea es una introducción general a los conceptos y herramienteas sin profundizar en particular.
 
 #Pruebas unitarias
  
- Las pruebas unitarias son bien conocidas y nos permitirán probar piezas de nuestro código de manera aislada, por ejemplo:
+ Las pruebas unitarias nos permitirán probar piezas de nuestro código de manera aislada, por ejemplo:
  
 ```javascript
 function suma(a, b) {
@@ -33,9 +34,9 @@ test();
 Por supuesto que esto es un ejemplo, pero la idea básica es tener una porción de código que prueba nuestro código, como imaginarán para esto exiten muchos frameworks:
 
 <ul>
-<li>[QUnit](http://qunitjs.com/)</li>
-<li>[Jasmine](http://jasmine.github.io/)</li>
-<li>[JUnit](http://junit.org/)</li>
+<li> [QUnit](http://qunitjs.com/) </li>
+<li> [Jasmine](http://jasmine.github.io/) </li>
+<li> [JUnit](http://junit.org/) </li>
 </ul>
 
 Y tantos más, en este caso vamos a utilizar QUnit.
@@ -53,7 +54,7 @@ con esto declaramos el test, el otro paso es verificar que el resultado es el es
 ```javascript
 test("suma correcta", function(){
     var resultado = suma(3, 4);
-    equal(resultado, 7, "El resultado no es el esperado");
+    equal(resultado, 7, "El resultado no es el esperado"); //verificamos el resultado esperado
 });
 ```
 de este modo verificamos que el resultado sea 7, sino el test fallará. Por supuesto existen más [aserciones](http://api.qunitjs.com/category/assert/).
@@ -71,7 +72,7 @@ test("resta correcta", function(){
 });
 ```
 
-En este caso escribimos el test para verificar la resta pero aún no hemos escrito nada de código, ni siquiera el método, el siguiete paso sería:
+En este caso escribimos y corremos el test para verificar la resta pero aún no hemos escrito nada de código, ni siquiera el método, el siguiete paso sería:
 
 ```javascript
 function resta(a, b){
@@ -90,12 +91,13 @@ function resta(a, b){
 [Ejemplo 3](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/examples/example_3.js)
 
 Y listo. De este modo vamos avanzando sobre pasos seguros y el finalizar tenemos el código listo y probado.
-En muchos casos vamos a escribir varias pruebas antes de comenzar a codificar lo que queremos probar.
+En común escribir varias pruebas antes de comenzar a codificar lo que queremos probar y tener la mayor parte del comportamiento esperado definido a partir de las pruebas.
 
 ![unit result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/qunit.png)
 
 ###Ventajas de TDD
 Algunas ventajas de TDD son:
+ - Nos permite pensar el código a partir del uso.
  - Al terminar tenemos un conjunto de test para probar nuestro código y podemos correrlos durante todo el proceso de desarrollo.
  - Nos permite ir "descubriendo" nuestro sistema, es decir, a medida que pensamos las pruebas vamos descubriendo nuevos casos y repensando definiciones.
 
