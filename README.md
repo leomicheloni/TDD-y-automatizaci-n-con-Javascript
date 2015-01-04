@@ -105,7 +105,8 @@ Algunas ventajas de TDD son:
 Una de las dificultades para automatizar las pruebas hechas con QUnit es el hecho de que necesitamos un navegador web, pero esto no es necesariamente un problema ya que podemos utilizar [PhantomJs](http://phantomjs.org/) que es un navegador sin interfaz, y podemos invocarlos por línea de comandos.
 
 ##PhantomJs
-Es lo que se conoce como "headless browser": un navegador sin interfaz gráfica, tiene muchas utilidades en nuestro caso vamos a correr las pruebas de QUnit y ver el resultado por consola.
+Es lo que se conoce como "headless browser": un navegador sin interfaz gráfica, [tiene muchas utilidades](![unit result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/qunit.png)
+), en nuestro caso vamos a correr las pruebas de QUnit y ver el resultado por consola.
 
 Para utilizar PhantomJs tenemos que interactuar con su API, entonces si queremos correr los test de QUnit tenemos que escribir un script (se conocen como runners) para decirle que lo carge nuestra página de prueba y luego nos muestre el resultado, por suerte entre los ejemplos que se incluyen en la descarga de PhantomJs [existe uno](https://github.com/ariya/phantomjs/blob/master/examples/run-qunit.js)
 
