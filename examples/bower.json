@@ -1,0 +1,13 @@
+{
+  "name": "examples",
+  "version": "0.0.0",
+  "homepage": "https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript",
+  "authors": [
+    "Leonardo Micheloni"
+  ],
+  "main": "exampleloader.html",
+  "license": "MIT",
+  "devDependencies": {
+    "qunit": "~1.16.0"
+  }
+}

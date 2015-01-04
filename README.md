@@ -149,3 +149,14 @@ Y mucho más, una de las tareas más populares es [Watch](https://www.npmjs.com/
 
 Utilizamos la tarea [Shell](https://www.npmjs.com/package/grunt-shell) para ejecutar el comando de Phantom.
 
+Nuestro archivo de configuratión de grunt [quedaría así] (https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/gruntfile.js)
+
+y lo invocamos con el siguiente comando
+
+```javascript
+grunt
+```
+
+Una vez hecho vemos que funciona perfectamente
+
+![grunt result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/grunt.png)
