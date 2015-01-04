@@ -34,9 +34,9 @@ test();
 Por supuesto que esto es un ejemplo, pero la idea básica es tener una porción de código que prueba nuestro código, como imaginarán para esto exiten muchos frameworks:
 
 <ul>
-<li> [QUnit](http://qunitjs.com/) </li>
-<li> [Jasmine](http://jasmine.github.io/) </li>
-<li> [JUnit](http://junit.org/) </li>
+<li><a href="http://qunitjs.com/">QUnit</a></li>
+<li><a href="http://jasmine.github.io">Jasmine</a></li>
+<li><a href="http://junit.org/">JUnit</a></li>
 </ul>
 
 Y tantos más, en este caso vamos a utilizar QUnit.
