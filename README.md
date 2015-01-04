@@ -124,6 +124,9 @@ y vemos el resultado en la consola, genial
 ##Automatizar las pruebas, testing continuo
 En este caso con un lindo script hecho con PowerShell logramos que las pruebas de QUnit se ejecuten sobre PhantomJs cada vez que guardamos un archivo.
 
+#Automatizar QUnit y Phantom con Grunt
+Grunt es un Task Runner hecho sobre NodeJs, básicamente contamos con infinidad de plugins para hacer tareas, entonces a través de un archivo gruntfile.js le decimos a grunt qué hacer.
+
 Para hacerlo podemos escribir un script que mire los cambios y ejecute el mismo comando de PhantomJs, en este caso voy a utilizar un script que hizo [mi buen amigo José](http://joseoncode.com/2011/08/08/javascript-continuous-testing-with-qunit-phantomjs-and-powershell/).
 
 ![phantom result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/powershell.png)
@@ -131,3 +134,18 @@ Para hacerlo podemos escribir un script que mire los cambios y ejecute el mismo 
 Como vemos con cada cambio en algún archivo dentro de nuestro código se ejecuta el comando que hace que PhantomJs corra los test de QUnit, por lo tanto estamos haciendo testing continuo.
 
 **La combinación de TDD y testing continuo es muy interesante, ya que definimos los casos de prueba y a medida que desarrollamos el código vamos viendo como se van superando las pruebas**
+
+#Grunt
+[Grunt es un task runner](http://gruntjs.com/) desarrollado sobre NodeJs, básicamente tenemos una infinidad de [plugins](http://gruntjs.com/plugins) que podemos utilizar para hacer cosas como:
+<ul>
+	<li>Copiar</li>
+	<li>Minificar</li>
+	<li>Comprimir con GZip</li>
+	<li>Correr Hints</li>
+</ul>
+
+Y mucho más, una de las tareas más populares es [Watch](https://www.npmjs.com/package/grunt-contrib-watch), que permite correr otra tarea cuando se detecta algún cambio en un archivo, vamos a ver cómo quedaría la configuración de grunt para hacer lo mismo que acabamos de hacer con PowerShell.
+
+
+Utilizamos la tarea [Shell](https://www.npmjs.com/package/grunt-shell) para ejecutar el comando de Phantom.
+

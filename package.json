@@ -1,0 +1,27 @@
+{
+  "name": "TDD_Javascript_Automation",
+  "version": "1.0.0",
+  "description": "TDD y automatización con Javascript\r ===================================",
+  "main": "gruntfile.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript.git"
+  },
+  "author": "Leonardo Micheloni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/issues"
+  },
+  "homepage": "https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^1.1.1"
+  }
+}
