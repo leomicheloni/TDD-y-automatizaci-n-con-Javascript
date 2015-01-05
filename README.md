@@ -31,15 +31,16 @@ test();
 
 [Ejemplo 1](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/examples/example_1.js)
 
-Por supuesto que esto es un ejemplo, pero la idea básica es tener una porción de código que prueba nuestro código, como imaginarán para esto exiten muchos frameworks:
+Por supuesto que esto es un ejemplo, pero la idea básica es tener una porción de código que prueba nuestro código, como imaginarán para esto existen muchos frameworks, entre ellos:
 
 <ul>
 <li><a href="http://qunitjs.com/">QUnit</a></li>
 <li><a href="http://jasmine.github.io">Jasmine</a></li>
 <li><a href="http://junit.org/">JUnit</a></li>
+<li>Y otros</li>
 </ul>
 
-Y tantos más, en este caso vamos a utilizar QUnit.
+En este caso vamos a utilizar QUnit.
 
 ##Introducción a QUnit
 Básicamente tenemos una función con la cual declaramos un test
@@ -49,7 +50,7 @@ test("suma correcta", function(){
 .... //codigo del test
 });
 ```
-con esto declaramos el test, el otro paso es verificar que el resultado es el esperado, para ello hay varias "aserciones"
+el otro paso es verificar que el resultado es el esperado, para ello hay varias "aserciones"
 
 ```javascript
 test("suma correcta", function(){
