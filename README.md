@@ -222,4 +222,39 @@ Muy bien, sencillo y poderoso, no nos queda más que elegir el enfoque que más 
 Si queremos ir un paso más allá en la automatización y el aseguramiento de la calidad la integración continua parece un paso lógico.
 La idea es que cada vez que subimos código a nuestro control de código se ejecuten las pruebas automatizadas y nos deje avise de alguna manera en caso de error.
 
+##Travis
+[Es un servicio de integración continua](https://travis-ci.org/) que funciona muy bien con Github, básicamente indicamos qué proyecto queremos que mire (es decir, que esté atento a algún push) y después que comando ejecutar.
+
+Travis soporta varias plataformas para correr scripts de build.
+
+<ul>
+	<li>Nodejs</li>
+	<li>Ruby</li>
+	<li>PHP</li>
+	<li>y otros</li>
+</ul>
+
+Básicamete tenemos que crear un [archivo de configuración](http://docs.travis-ci.com/user/languages/javascript-with-nodejs/) y decirle a travis qué plataforma corremos, qué comando, qué branch y otras cosas, en este caso el archivo de configuración es simple y está configurado para correr una tarea que no hace mucho pero sirve de ejemplo:
+
+```
+language: node_js
+node_js:
+- '0.11'
+before_script:
+- npm install -g grunt-cli
+script:
+- grunt test
+after_success:
+#
+env:
+#
+branches:
+  only:
+  - master
+```
+
+En este caso le dice que use Nodejs y que instale grunt antes de correr el comando sobre el branch master. A cambio Travis nos da una imagen con el resultado del build que podemos incluir en nuestro proyecto así:
+
 ![travis status](https://api.travis-ci.org/leomicheloni/TDD-y-automatizaci-n-con-Javascript.svg)
+
+Por supuesto que la idea es generar nuestros archivos de build, correr tests y todo lo necesario.
