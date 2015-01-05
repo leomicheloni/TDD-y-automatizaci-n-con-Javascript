@@ -15,5 +15,8 @@ module.exports = function (grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-shell');
+	grunt.registerTask('test', function(){
+		console.log('ok');
+	});
 	grunt.registerTask('default', ['watch']);
 };
