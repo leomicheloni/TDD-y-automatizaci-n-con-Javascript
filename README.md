@@ -9,7 +9,7 @@ TDD y automatización con Javascript
  Con estas herramientas podemos asegurar que el cliente tendrá una versión del producto rápidamente disponible y con un nivel de prueba.
  En este artículo vamos a hacer una introducción a conceptos de unit testing, integración continua, despligue automatizado y entrega continua.
  Para ello utilizaremos Nodejs, gruntjs, Qunit, Phantomjs y Karma.
- La idea es una introducción general a los conceptos y herramienteas sin profundizar en particular.
+ La idea es una introducción general a los conceptos y herramientas sin profundizar en particular.
 
 #Pruebas unitarias
  
