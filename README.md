@@ -143,9 +143,10 @@ Como vemos con cada cambio en algún archivo dentro de nuestro código se ejecut
 	<li>Minificar</li>
 	<li>Comprimir con GZip</li>
 	<li>Correr Hints</li>
+	<li>Y muchas más</li>
 </ul>
 
-Y mucho más, una de las tareas más populares es [Watch](https://www.npmjs.com/package/grunt-contrib-watch), que permite correr otra tarea cuando se detecta algún cambio en un archivo, vamos a ver cómo quedaría la configuración de grunt para hacer lo mismo que acabamos de hacer con PowerShell.
+Una de las tareas más populares es [Watch](https://www.npmjs.com/package/grunt-contrib-watch), que permite correr otra tarea cuando se detecta algún cambio en un archivo; vamos a ver cómo quedaría la configuración de grunt para hacer lo mismo que acabamos de hacer con PowerShell.
 
 
 Utilizamos la tarea [Shell](https://www.npmjs.com/package/grunt-shell) para ejecutar el comando de Phantom.
