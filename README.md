@@ -217,3 +217,9 @@ karma start
 ![karma config](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/karmastart.png)
 
 Muy bien, sencillo y poderoso, no nos queda más que elegir el enfoque que más nos gusta y comenzar con el testing continuo.
+
+#Integración continua
+Si queremos ir un paso más allá en la automatización y el aseguramiento de la calidad la integración continua parece un paso lógico.
+La idea es que cada vez que subimos código a nuestro control de código se ejecuten las pruebas automatizadas y nos deje avise de alguna manera en caso de error.
+
+![travis status](https://api.travis-ci.org/leomicheloni/TDD-y-automatizaci-n-con-Javascript.svg)
