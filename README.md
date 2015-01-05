@@ -3,7 +3,7 @@ TDD y automatización con Javascript
 
 #Introducción:
 
- En procesos ágiles de desarrollo iterativos y de ciclos cortos es muy valiso el feedback de los usuarios. Para esto necesitamos poder poner a disposición de los mismos versiones de la aplicación lo más rápido posible.
+ En procesos ágiles de desarrollo iterativos y de ciclos cortos es muy valioso el feedback de los usuarios. Para esto necesitamos poder poner a disposición de los mismos versiones de la aplicación lo más rápido posible.
  Las pruebas unitarias (unit testing) nos permiten desarrollar piezas del sistema sin necesitar otras dependecias y además asegurar la calidad del código a medida que el sistema crece.
  Automatizar la ejecución de las pruebas unitarias nos permite detectar problemas de integración, por otro lado la automatización del proceso de despliegue nos ahorra el tiempo de hacerlo nosotros y evita errores humanos.
  Con estas herramientas podemos asegurar que el cliente tendrás una versión del producto rápidamente disponible y con un nivel de prueba.
