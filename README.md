@@ -214,6 +214,6 @@ Con esto hecho no tenemos más que iniciar Karma para que comienze el testing co
 karma start
 ```
 
-![karma config](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/karmaconfig.png)
+![karma config](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/karmastart.png)
 
 Muy bien, sencillo y poderoso, no nos queda más que elegir el enfoque que más nos gusta y comenzar con el testing continuo.
