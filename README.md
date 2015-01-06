@@ -285,7 +285,7 @@ Para finalizar vamos a cerrar todo el proceso dejando la última versión funcio
 
 Travis tiene soporte para hacer [deploy sobre varias plataformas](http://docs.travis-ci.com/user/deployment/) a través de diferentes providers (incluso podemos hacerlo de manera personalizada utilizando [comandos de Linux](http://docs.travis-ci.com/user/deployment/custom/) y utilizar FTP por ejemplo). No tenemos más que leer la documentación y agregar la sección deploy a nuestro .travis.yml tal como se [explica acá](http://docs.travis-ci.com/user/deployment/codedeploy/).
 
-En caso de utilizar claves de acceso a algún servicio externo (como en este caso Amazon S3) las mismas pueden incluirse en la configuración pública encriptadas y configuramos Travis para que sepa desencriptarlas.
+En caso de utilizar claves de acceso a algún servicio externo (como en este caso Amazon S3) las mismas pueden incluirse en la configuración pública encriptadas y configurar Travis para que sepa desencriptarlas.
 
 El archivo completo con la sección de deploy sería algo así:
  
