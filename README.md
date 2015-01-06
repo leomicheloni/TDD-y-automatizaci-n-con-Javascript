@@ -260,17 +260,18 @@ branches:
   - master
 ```
 
-Como vemos le dice que use Nodejs y que instale grunt-cli antes de correr el comando sobre el branch master. A cambio Travis nos da una imagen con el resultado del build que podemos incluir en nuestro proyecto así:
+Como vemos le dice que use Nodejs y que instale grunt-cli antes de correr el comando sobre el branch master.
+Un vez finalizado el proceso travis nos da el resultado de varias manera, una que es interesantes es la generación de una pequeña imagen que indica el resultado del build como se muestra a continuación:
 
 ![travis status](https://api.travis-ci.org/leomicheloni/TDD-y-automatizaci-n-con-Javascript.svg)
 
-En caso de haber problemas o que queramos ver qué hizo Travis podemos ver una suerte de consola en el sitio:
+La cual está en verde o rojo dependiendo del resultado del build.
+
+Si quisiéramos ver en detalla los pasos del proceso podemos ver una suerte de consola en el sitio de Travis:
 
 ![travis result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/travisresult.png)
 
-Además podemos ver el historial y el detalle de los comandos y obviamente nos envía un mail a la dirección que tenemos registrada en Github.
-
-Por supuesto que la idea es generar nuestros archivos de build, correr tests y todo lo necesario.
+Además podemos ver el historial y el detalle de los comandos. Por otro lado Travis nos envía un mail a la dirección que tenemos registrada en Github con el detalle del proceso.
 
 #Continuos delivery
 Para finalizar vamos a cerrar todo el proceso dejando la última versión funcional de nuestro proyecto disponible para usar, esto se conoce como "entrega continua" o "continuos delivery". Por medio de este proceso cada vez que actualicemos el código en Github, correran los test y todo lo que configuremos, se creará un paquete y quedará disponible para usar.
