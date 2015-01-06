@@ -317,8 +317,8 @@ deploy:
 Y listo, ahora tenemos **continuos delivery** funcionado de punta a punta.
 
 #Conclusión
-Los proceso de automatización puden ser trabajosos de configurar, pero nos dan un gran valor al poder ejecutar tareas importantes y repetitivas. Además, nos dan la poderosa herramienta de poner a disposición la última versión de nuestra aplicación con mínimo esfuerzo. Y, tal vez más importante, saber rápidamente si tenemos problemas de integración o si "rompimos" algún test existente.
-Entonces siempre que tengamos dudas si automatizar o no repitamos las siguientes tres palabra: automatizar, automatizar y automatizar.
+Los procesos de automatización puden ser trabajosos de configurar, pero nos dan un gran valor al poder ejecutar tareas importantes y repetitivas. Además, nos dan la poderosa herramienta de poner a disposición la última versión de nuestra aplicación con mínimo esfuerzo. Y, tal vez más importante, saber rápidamente si tenemos problemas de integración o si "rompimos" algún test existente.
+Entonces siempre que tengamos dudas si automatizar o no, repitamos las siguientes frase: automatizar, automatizar y automatizar.
 Hasta la próxima.
 
 @leomicheloni
