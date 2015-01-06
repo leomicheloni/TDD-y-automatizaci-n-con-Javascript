@@ -264,9 +264,10 @@ Como vemos le dice que use Nodejs y que instale grunt-cli antes de correr el com
 
 ![travis status](https://api.travis-ci.org/leomicheloni/TDD-y-automatizaci-n-con-Javascript.svg)
 
-Y obviamente nos envía un mail a la dirección que tenemos registrada en Github.
 En caso de haber problemas o que queramos ver qué hizo Travis podemos ver una suerte de consola en el sitio:
 
 ![travis result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/travisresult.png)
+
+Además podemos ver el historial y el detalle de los comandos y obviamente nos envía un mail a la dirección que tenemos registrada en Github.
 
 Por supuesto que la idea es generar nuestros archivos de build, correr tests y todo lo necesario.
