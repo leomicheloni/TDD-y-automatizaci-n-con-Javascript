@@ -274,18 +274,18 @@ Si quisiéramos ver en detalle los pasos del proceso podemos acceder a una suert
 También podemos hacer click sobre ciertos elementos para ver el detalle de los comandos. Por otro lado Travis nos envía un mail a la dirección que tenemos registrada en Github con el detalle del proceso.
 
 #Continuos delivery
-Para finalizar vamos a cerrar todo el proceso dejando la última versión funcional de nuestro proyecto disponible para usar. Esto se conoce como "entrega continua" o "continuos delivery"; por medio de este mecanismo cada vez que actualicemos el código en Github ocurrirán muchas cosas de manera automática (dependiendo de qué hayamos configurado) y al finalizar se deplegará el código, un escenario posible sería:
+Para finalizar vamos a cerrar todo el proceso dejando la versión funcional más reciente de nuestro proyecto disponible para usar. Esto se conoce como "entrega continua" o "continuos delivery"; por medio de este mecanismo, cada vez que actualicemos el código en Github ocurrirán muchas cosas de manera automática (dependiendo de qué hayamos configurado) y al finalizar se desplegará el código. Un escenario posible sería:
 <ul>
-	<li>Correr jslint</li>
+	<li><a href="http://jshint.com/">Correr jshint</a></li>
 	<li>Correr test unitarios</li>
 	<li>Minificar el código</li>
 	<li>Generar el paquete</li>
 	<li>Desplegar sobre un ambiente de prueba (o de integración continua mejor dicho)</li>
 </ul>
 
-Travis tiene soporte para hacer [deploy sobre varias plataformas](http://docs.travis-ci.com/user/deployment/) a través de diferentes providers (incluso podemos hacerlo de manera personalizada utilizando [comandos de Linux](http://docs.travis-ci.com/user/deployment/custom/) y utilizar FTP por ejemplo). No tenemos más que leer la documentación y agregar la sección deploy a nuestro .travis.yml tal como se [explica acá](http://docs.travis-ci.com/user/deployment/codedeploy/).
+Travis tiene soporte para hacer [deploy sobre varias plataformas](http://docs.travis-ci.com/user/deployment/) a través de diferentes providers (incluso podemos hacerlo de manera personalizada utilizando [comandos de Linux](http://docs.travis-ci.com/user/deployment/custom/) y utilizar FTP por ejemplo). No tenemos más que leer la documentación y agregar la sección deploy a nuestro .travis.yml, tal como se [explica acá](http://docs.travis-ci.com/user/deployment/codedeploy/).
 
-En caso de utilizar claves de acceso a algún servicio externo (como en este caso Amazon S3) las mismas pueden incluirse en la configuración pública encriptadas y configurar Travis para que sepa desencriptarlas.
+En caso de utilizar claves de acceso a algún servicio externo (como en este caso Amazon S3), las mismas pueden incluirse en la configuración pública encriptadas y configurar Travis para que sepa desencriptarlas.
 
 El archivo completo con la sección de deploy sería algo así:
  
@@ -317,6 +317,8 @@ deploy:
 Y listo, ahora tenemos **continuos delivery** funcionado de punta a punta.
 
 #Conclusión
-Los proceso de automatización puden ser trabajosos de configurar pero nos dan un gran valor al poder ejecutar tareas importantes y repetitivas, además nos dan la poderosa herramienta de poner a disposición la última versión de nuestra aplicación sin esfuerzo. Y tal vez más importante, saber rápidamente si tenemos problemas de integración o si "rompimos" algún test existente.
+Los proceso de automatización puden ser trabajosos de configurar, pero nos dan un gran valor al poder ejecutar tareas importantes y repetitivas. Además, nos dan la poderosa herramienta de poner a disposición la última versión de nuestra aplicación con mínimo esfuerzo. Y, tal vez más importante, saber rápidamente si tenemos problemas de integración o si "rompimos" algún test existente.
 Entonces siempre que tengamos dudas si automatizar o no repitamos las siguientes tres palabra: automatizar, automatizar y automatizar.
 Hasta la próxima.
+
+@leomicheloni
