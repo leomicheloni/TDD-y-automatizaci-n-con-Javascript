@@ -265,16 +265,23 @@ Un vez finalizado el proceso travis nos da el resultado de varias maneras, una q
 
 ![travis status](https://api.travis-ci.org/leomicheloni/TDD-y-automatizaci-n-con-Javascript.svg)
 
-La cual está en verde o rojo dependiendo del resultado del build. Es común ver está imagen (o de servicios similares) en los proyectos de Github para saber el estado del último build.
+La cual estará en verde o rojo dependiendo del resultado. Es común ver está imagen (o de servicios similares) en los proyectos de Github para saber el estado del último build.
 
-Si quisiéramos ver en detalla los pasos del proceso podemos ver una suerte de consola en el sitio de Travis:
+Si quisiéramos ver en detalle los pasos del proceso podemos acceder a una suerte de consola en el sitio de Travis:
 
 ![travis result](https://github.com/leomicheloni/TDD-y-automatizaci-n-con-Javascript/blob/master/screenshots/travisresult.png)
 
-Además podemos ver el historial y el detalle de los comandos. Por otro lado Travis nos envía un mail a la dirección que tenemos registrada en Github con el detalle del proceso.
+También podemos hacer click sobre ciertos elementos para ver el detalle de los comandos. Por otro lado Travis nos envía un mail a la dirección que tenemos registrada en Github con el detalle del proceso.
 
 #Continuos delivery
-Para finalizar vamos a cerrar todo el proceso dejando la última versión funcional de nuestro proyecto disponible para usar, esto se conoce como "entrega continua" o "continuos delivery". Por medio de este proceso cada vez que actualicemos el código en Github, correran los test y todo lo que configuremos, se creará un paquete y quedará disponible para usar.
+Para finalizar vamos a cerrar todo el proceso dejando la última versión funcional de nuestro proyecto disponible para usar, esto se conoce como "entrega continua" o "continuos delivery". Por medio de este proceso cada vez que actualicemos el código en Github ocurrirán muchas cosas de manera automática (dependiendo de qué hayamos configurado):
+<ul>
+	<li>Se correrá jslint</li>
+	<li>Se correrás los test unitarios</li>
+	<li>Se minificará el código</li>
+	<li>Se generará el paquete</li>
+	<li>Y se desplegará sobre un ambiente de prueba (o de integración continua mejor dicho)</li>
+</ul>
 
 Travis tiene soporte para hacer [deploy sobre varias plataformas](http://docs.travis-ci.com/user/deployment/) a través de diferentes providers (incluso de manera personalizada utilizando [comandos de Linux](http://docs.travis-ci.com/user/deployment/custom/) por FTP por ejemplo). No tenemos más que leer la documentación y agregar la sección deploy a nuestro .travis.yml tal como se [explica acá](http://docs.travis-ci.com/user/deployment/codedeploy/).
 
@@ -304,7 +311,7 @@ deploy:
   application: MyApp
 ```
 
-Y listo.
+Y listo. Para el caso de las claves de acceso las mismas pueden incluirse en la configuración pública encripatadas y por otro lado configuramos Travis con la clave para desencriptarlas.
 
 #Conclusión
 Los proceso de automatización puden ser trabajosos de configurar pero nos dan un gran valor al poder ejecutar tareas importantes y repetitivas, además nos dan la poderosa herramienta de poner a disposición la última versión de nuestra aplicación sin esfuerzo. Y tal vez más importante, saber rápidamente si tenemos problemas de integración o si "rompimos" algún test existente.
