@@ -225,7 +225,7 @@ La idea es que, cada vez que subimos cambios a nuestro control de código se eje
 ##Travis
 [Es un servicio de integración continua](https://travis-ci.org/) que funciona muy bien con Github, básicamente indicamos qué proyecto queremos que mire (es decir, que esté atento a algún push) y después que comando ejecutar.
 
-Travis soporta varias plataformas para correr scripts de build.
+Travis soporta varias plataformas para correr scripts de build:
 
 <ul>
 	<li>Nodejs</li>
