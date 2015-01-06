@@ -279,12 +279,26 @@ Travis tiene soporte para hacer [deploy sobre varias plataformas](http://docs.tr
 
 En este caso vamos a desplegar sobre Amazon S3.
 
-```
+```yaml
+language: node_js
+node_js:
+- '0.11'
+before_script:
+- npm install -g grunt-cli
+script:
+- grunt test
+after_success:
+#
+env:
+#
+branches:
+  only:
+  - master
 deploy:
   provider: codedeploy
   access_key_id: "YOUR AWS ACCESS KEY"
   secret_access_key: "YOUR AWS SECRET KEY"
-  bucket: "mibucket"
+  bucket: "mibucket_en_s3"
   key: "deploy/mipaquete.js"
   application: MyApp
 ```
