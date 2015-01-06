@@ -223,7 +223,7 @@ Si queremos ir un paso más allá en la automatización y el aseguramiento de la
 La idea es que, cada vez que subimos cambios a nuestro control de código se ejecuten las pruebas automatizadas y nos avise de alguna manera en caso de error.
 
 ##Travis
-[Es un servicio de integración continua](https://travis-ci.org/) que funciona muy bien con Github, básicamente indicamos qué proyecto queremos que mire (es decir, que esté atento a algún push) y después que comando ejecutar.
+[Es un servicio de integración continua](https://travis-ci.org/) que funciona muy bien con Github, simplemente indicamos qué proyecto queremos que mire (es decir, que esté atento a algún push) y después que comando ejecutar.
 
 Travis soporta varias plataformas para correr scripts de build:
 
