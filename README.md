@@ -234,14 +234,14 @@ Travis soporta varias plataformas para correr scripts de build:
 	<li>y otros</li>
 </ul>
 
-Básicamete tenemos que crear un [archivo de configuración](http://docs.travis-ci.com/user/languages/javascript-with-nodejs/) y decirle a travis qué plataforma corremos, qué comando, qué branch y otras cosas, en este caso el archivo de configuración es simple y está configurado para correr una tarea que no hace mucho pero sirve de ejemplo:
+Básicamete tenemos que crear un [archivo de configuración](http://docs.travis-ci.com/user/languages/javascript-with-nodejs/) y decirle a travis qué plataforma corremos, qué comando, qué branch entre otras cosas. En este caso el archivo de configuración es simple y está configurado para correr la siguiente tarea que no hace mucho pero sirve de ejemplo:
 ```javascript
 	grunt.registerTask('test', function(){
 		console.log('ok');
 	});
 ```
 
-Y la configuración de Travis sería la siguiente:
+La configuración de Travis sería la siguiente:
 
 ```yaml
 language: node_js
@@ -250,7 +250,7 @@ node_js:
 before_script:
 - npm install -g grunt-cli
 script:
-- grunt test
+- grunt test #indicamos que llame a la tarea 'test' de grunt
 after_success:
 #
 env:
@@ -260,8 +260,8 @@ branches:
   - master
 ```
 
-Como vemos le dice que use Nodejs y que instale grunt-cli antes de correr el comando sobre el branch master.
-Un vez finalizado el proceso travis nos da el resultado de varias maneras, una que es interesantes es la generación de una pequeña imagen que indica el resultado del build como se muestra a continuación:
+Esta configuración indica a Travis que use Nodejs versión 0.11 y que instale grunt-cli antes de correr el comando sobre el branch master.
+Un vez finalizado el proceso Travis nos da el resultado de varias maneras, una que es interesante es la generación de una pequeña imagen que indica el resultado del build como se muestra a continuación:
 
 ![travis status](https://api.travis-ci.org/leomicheloni/TDD-y-automatizaci-n-con-Javascript.svg)
 
