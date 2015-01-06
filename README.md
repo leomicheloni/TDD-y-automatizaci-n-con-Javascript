@@ -261,11 +261,11 @@ branches:
 ```
 
 Como vemos le dice que use Nodejs y que instale grunt-cli antes de correr el comando sobre el branch master.
-Un vez finalizado el proceso travis nos da el resultado de varias manera, una que es interesantes es la generación de una pequeña imagen que indica el resultado del build como se muestra a continuación:
+Un vez finalizado el proceso travis nos da el resultado de varias maneras, una que es interesantes es la generación de una pequeña imagen que indica el resultado del build como se muestra a continuación:
 
 ![travis status](https://api.travis-ci.org/leomicheloni/TDD-y-automatizaci-n-con-Javascript.svg)
 
-La cual está en verde o rojo dependiendo del resultado del build.
+La cual está en verde o rojo dependiendo del resultado del build. Es común ver está imagen (o de servicios similares) en los proyectos de Github para saber el estado del último build.
 
 Si quisiéramos ver en detalla los pasos del proceso podemos ver una suerte de consola en el sitio de Travis:
 
