@@ -243,7 +243,7 @@ Básicamete tenemos que crear un [archivo de configuración](http://docs.travis-
 
 Y la configuración de Travis sería la siguiente:
 
-```
+```yaml
 language: node_js
 node_js:
 - '0.11'
