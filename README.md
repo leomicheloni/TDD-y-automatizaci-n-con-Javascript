@@ -271,3 +271,19 @@ En caso de haber problemas o que queramos ver qué hizo Travis podemos ver una s
 Además podemos ver el historial y el detalle de los comandos y obviamente nos envía un mail a la dirección que tenemos registrada en Github.
 
 Por supuesto que la idea es generar nuestros archivos de build, correr tests y todo lo necesario.
+
+#Continuos delivery
+Para finalizar vamos a cerrar todo el proceso dejando la última versión funcional de nuestro proyecto disponible para usar. En este caso en Amazon S3.
+Travis tiene soporte para hacer [deploy sobre varias plataformas](http://docs.travis-ci.com/user/deployment/) a través de diferentes providers (incluso de manera personalizada utilizando [comandos de Linux](http://docs.travis-ci.com/user/deployment/custom/) por FTP por ejemplo). No tenemos más que leer la documentación y agregar la sección deploy a nuestro .travis.yml tal como se [explica acá](http://docs.travis-ci.com/user/deployment/codedeploy/).
+
+```
+deploy:
+  provider: codedeploy
+  access_key_id: "YOUR AWS ACCESS KEY"
+  secret_access_key: "YOUR AWS SECRET KEY"
+  bucket: "mibucket"
+  key: "deploy/mipaquete.js"
+  application: MyApp
+```
+
+Y listo.
