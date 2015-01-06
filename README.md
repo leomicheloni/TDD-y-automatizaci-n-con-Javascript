@@ -235,6 +235,13 @@ Travis soporta varias plataformas para correr scripts de build.
 </ul>
 
 Básicamete tenemos que crear un [archivo de configuración](http://docs.travis-ci.com/user/languages/javascript-with-nodejs/) y decirle a travis qué plataforma corremos, qué comando, qué branch y otras cosas, en este caso el archivo de configuración es simple y está configurado para correr una tarea que no hace mucho pero sirve de ejemplo:
+```javascript
+	grunt.registerTask('test', function(){
+		console.log('ok');
+	});
+```
+
+Y la configuración de Travis sería la siguiente:
 
 ```
 language: node_js
@@ -253,7 +260,7 @@ branches:
   - master
 ```
 
-En este caso le dice que use Nodejs y que instale grunt antes de correr el comando sobre el branch master. A cambio Travis nos da una imagen con el resultado del build que podemos incluir en nuestro proyecto así:
+Como vemos le dice que use Nodejs y que instale grunt-cli antes de correr el comando sobre el branch master. A cambio Travis nos da una imagen con el resultado del build que podemos incluir en nuestro proyecto así:
 
 ![travis status](https://api.travis-ci.org/leomicheloni/TDD-y-automatizaci-n-con-Javascript.svg)
 
