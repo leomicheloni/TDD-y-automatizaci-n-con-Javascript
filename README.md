@@ -273,8 +273,11 @@ Además podemos ver el historial y el detalle de los comandos y obviamente nos e
 Por supuesto que la idea es generar nuestros archivos de build, correr tests y todo lo necesario.
 
 #Continuos delivery
-Para finalizar vamos a cerrar todo el proceso dejando la última versión funcional de nuestro proyecto disponible para usar. En este caso en Amazon S3.
+Para finalizar vamos a cerrar todo el proceso dejando la última versión funcional de nuestro proyecto disponible para usar, esto se conoce como "entrega continua" o "continuos delivery". Por medio de este proceso cada vez que actualicemos el código en Github, correran los test y todo lo que configuremos, se creará un paquete y quedará disponible para usar.
+
 Travis tiene soporte para hacer [deploy sobre varias plataformas](http://docs.travis-ci.com/user/deployment/) a través de diferentes providers (incluso de manera personalizada utilizando [comandos de Linux](http://docs.travis-ci.com/user/deployment/custom/) por FTP por ejemplo). No tenemos más que leer la documentación y agregar la sección deploy a nuestro .travis.yml tal como se [explica acá](http://docs.travis-ci.com/user/deployment/codedeploy/).
+
+En este caso vamos a desplegar sobre Amazon S3.
 
 ```
 deploy:
