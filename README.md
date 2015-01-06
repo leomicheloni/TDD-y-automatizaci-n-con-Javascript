@@ -219,8 +219,8 @@ karma start
 Muy bien, sencillo y poderoso, no nos queda más que elegir el enfoque que más nos gusta y comenzar con el testing continuo.
 
 #Integración continua
-Si queremos ir un paso más allá en la automatización y el aseguramiento de la calidad la integración continua parece un paso lógico.
-La idea es que cada vez que subimos código a nuestro control de código se ejecuten las pruebas automatizadas y nos deje avise de alguna manera en caso de error.
+Si queremos ir un paso más allá en la automatización y el aseguramiento de la calidad, la integración continua es un paso lógico.
+La idea es que, cada vez que subimos cambios a nuestro control de código se ejecuten las pruebas automatizadas y nos avise de alguna manera en caso de error.
 
 ##Travis
 [Es un servicio de integración continua](https://travis-ci.org/) que funciona muy bien con Github, básicamente indicamos qué proyecto queremos que mire (es decir, que esté atento a algún push) y después que comando ejecutar.
@@ -306,6 +306,6 @@ deploy:
 Y listo.
 
 #Conclusión
-Los proceso de automatización puden ser trabajosos de configurar pero nos dan un gran valor al poder ejecutar tareas importantes y repetitivas, además nos dan la poderosa herramienta de poner a disposición la última versión de nustra aplicación sin esfuerzo. Y tal vez más importante, saber rápidamente si tenemos problemas de integración o si "rompimos" algún test existente.
+Los proceso de automatización puden ser trabajosos de configurar pero nos dan un gran valor al poder ejecutar tareas importantes y repetitivas, además nos dan la poderosa herramienta de poner a disposición la última versión de nuestra aplicación sin esfuerzo. Y tal vez más importante, saber rápidamente si tenemos problemas de integración o si "rompimos" algún test existente.
 Entonces siempre que tengamos dudas si automatizar o no repitamos las siguientes tres palabra: automatizar, automatizar y automatizar.
 Hasta la próxima.
