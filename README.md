@@ -304,3 +304,8 @@ deploy:
 ```
 
 Y listo.
+
+#Conclusión
+Los proceso de automatización puden ser trabajosos de configurar pero nos dan un gran valor al poder ejecutar tareas importantes y repetitivas, además nos dan la poderosa herramienta de poner a disposición la última versión de nustra aplicación sin esfuerzo. Y tal vez más importante, saber rápidamente si tenemos problemas de integración o si "rompimos" algún test existente.
+Entonces siempre que tengamos dudas si automatizar o no repitamos las siguientes tres palabra: automatizar, automatizar y automatizar.
+Hasta la próxima.
