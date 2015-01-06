@@ -264,4 +264,6 @@ Como vemos le dice que use Nodejs y que instale grunt-cli antes de correr el com
 
 ![travis status](https://api.travis-ci.org/leomicheloni/TDD-y-automatizaci-n-con-Javascript.svg)
 
+Y obviamente nos envía un mail a la dirección que tenemos registrada en Github.
+
 Por supuesto que la idea es generar nuestros archivos de build, correr tests y todo lo necesario.
